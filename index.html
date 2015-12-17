@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+<head>
+	<title>Final Project</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	 <!--script src="numeric-1.2.6.js" type="text/javascript"></script-->
+</head>
+<body>
+	<div id="myDiv" style="width:90%;height:50%;"></div>
+	<script>
+		var color = [];
+		//for(int )
+
+
+		var trace1 = {
+  			y: [1, 2, 3, 4, 4, 4, 8, 9, 10],
+  			type: 'box',
+  			name: 'Sample A',
+  			marker:{
+    		color: ''
+  			}
+		};
+
+		var trace2 = {
+  			y: [2, 3, 3, 3, 3, 5, 6, 6, 7],
+  			type: 'box',
+  			name: 'Sample B',
+  			marker:{
+    		color: ''
+  			}
+		};
+
+		var trace3 = {
+  			y: [2, 3, 3, 3, 3, 5, 6, 6, 7],
+  			type: 'box',
+  			name: 'Sample C',
+  			marker:{
+    		color: ''
+  			}
+		};
+
+		var trace4 = {
+  			y: [2, 3, 3, 3, 3, 5, 6, 6, 7],
+  			type: 'box',
+  			name: 'Sample D',
+  			marker:{
+    		color: ''
+  			}
+		};
+
+		var trace5 = {
+  			y: [2, 3, 3, 3, 3, 5, 6, 6, 7],
+  			type: 'box',
+  			name: 'Sample E',
+  			marker:{
+    		color: ''
+  			}
+		};
+
+    var trace6 = {
+        y: [2, 3, 3, 3, 3, 5, 6, 6, 7],
+        type: 'box',
+        name: 'Sample F',
+        marker:{
+        color: ''
+        }
+    };
+
+    var trace7 = {
+        y: [2, 3, 3, 3, 3, 5, 6, 6, 7],
+        type: 'box',
+        name: 'Sample G',
+        marker:{
+        color: ''
+        }
+    };
+
+    var trace8 = {
+        y: [2, 3, 3, 3, 3, 5, 6, 6, 7],
+        type: 'box',
+        name: 'Sample H',
+        marker:{
+        color: ''
+        }
+    };
+
+    var trace9 = {
+        y: [2, 3, 3, 3, 3, 5, 6, 6, 7],
+        type: 'box',
+        name: 'Sample I',
+        marker:{
+        color: ''
+        }
+    };
+
+    var trace10 = {
+        y: [2, 3, 3, 3, 3, 5, 6, 6, 7],
+        type: 'box',
+        name: 'Sample J',
+        marker:{
+        color: ''
+        }
+    };
+
+		var data = [trace1, trace2, trace3, trace4, trace5, trace6, trace7, trace8, trace9, trace10];
+		for (var i=0; i < 5; i++){
+			data[i].marker.color = 'hsl(' + (360/data.length * i) + ', 50%, 50%)';
+		}
+
+		var layout = {
+  			title: 'Colored Box Plot'
+		};
+
+		Plotly.newPlot('myDiv', data, layout);
+
+	</script>
+</body>
+</html>
